@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Many Fires Is Too Many? | New Haven Tenant Safety</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'flame':  '#e63946',
+            'ember':  '#f4a261',
+            'card':   '#1c1c1c',
+            'smoke':  '#888888',
+            'divider':'#2e2e2e',
+          },
+          fontFamily: {
+            heading: ['"Barlow Condensed"', 'sans-serif'],
+            body:    ['"Barlow"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0f0f0f; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards;
+    }
+    .fade-up:nth-child(1) { animation-delay: 0.1s; }
+    .fade-up:nth-child(2) { animation-delay: 0.2s; }
+    .fade-up:nth-child(3) { animation-delay: 0.3s; }
+    .fade-up:nth-child(4) { animation-delay: 0.4s; }
+    .fade-up:nth-child(5) { animation-delay: 0.5s; }
+    .fade-up:nth-child(6) { animation-delay: 0.6s; }
+    .fade-up:nth-child(7) { animation-delay: 0.7s; }
+
+    .fire-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .fire-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(230, 57, 70, 0.15);
+    }
+  </style>
+</head>
+<body class="font-body text-white min-h-screen">
+
+  <!-- Hero -->
+  <header class="max-w-4xl mx-auto px-6 pt-16 pb-10 text-center">
+    <h1 class="font-heading font-black uppercase leading-none">
+      <span class="text-flame block" style="font-size: clamp(3rem, 10vw, 6rem);">How Many Fires</span>
+      <span class="text-white block" style="font-size: clamp(3rem, 10vw, 6rem);">Is Too Many?</span>
+    </h1>
+    <p class="mt-6 text-lg text-gray-300 max-w-xl mx-auto leading-relaxed">
+      Multiple fires have occurred at rental properties owned by the same landlord in New Haven.
+      Tenants have been displaced again and again.
+    </p>
+    <div class="mt-8 w-full h-px bg-divider"></div>
+  </header>
+
+  <!-- Timeline -->
+  <section class="max-w-4xl mx-auto px-6 pb-12">
+    <h2 class="font-heading font-bold text-2xl uppercase tracking-wide text-center mb-8">Recent Timeline</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+      <!-- Fire 1 -->
+      <div class="fire-card fade-up bg-card rounded-lg p-5 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-flame flex items-center justify-center font-heading font-black text-white text-lg">1</div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-smoke text-xs tracking-widest uppercase font-heading">Fire #1</span>
+            <span class="text-ember text-xs font-semibold">Jan 2023</span>
+          </div>
+          <p class="font-heading font-bold text-lg leading-tight">38 Bishop Street</p>
+          <p class="text-gray-400 text-sm mt-1">Arson. 20 residents displaced.</p>
+        </div>
+      </div>
+
+      <!-- Fire 2 -->
+      <div class="fire-card fade-up bg-card rounded-lg p-5 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-flame flex items-center justify-center font-heading font-black text-white text-lg">2</div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-smoke text-xs tracking-widest uppercase font-heading">Fire #2</span>
+            <span class="text-ember text-xs font-semibold">Oct 2023</span>
+          </div>
+          <p class="font-heading font-bold text-lg leading-tight">370 Mansfield Street</p>
+          <p class="text-gray-400 text-sm mt-1">Over 35 displaced, 2 injured.</p>
+        </div>
+      </div>
+
+      <!-- Fire 3 -->
+      <div class="fire-card fade-up bg-card rounded-lg p-5 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-flame flex items-center justify-center font-heading font-black text-white text-lg">3</div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-smoke text-xs tracking-widest uppercase font-heading">Fire #3</span>
+            <span class="text-ember text-xs font-semibold">Nov 2023</span>
+          </div>
+          <p class="font-heading font-bold text-lg leading-tight">56–58 Avon Street</p>
+          <p class="text-gray-400 text-sm mt-1">Tenants displaced.</p>
+        </div>
+      </div>
+
+      <!-- Fire 4 -->
+      <div class="fire-card fade-up bg-card rounded-lg p-5 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-flame flex items-center justify-center font-heading font-black text-white text-lg">4</div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-smoke text-xs tracking-widest uppercase font-heading">Fire #4</span>
+            <span class="text-ember text-xs font-semibold">Oct 6, 2024</span>
+          </div>
+          <p class="font-heading font-bold text-lg leading-tight">516 Elm Street</p>
+          <p class="text-gray-400 text-sm mt-1">Nine displaced. <span class="text-flame font-semibold">One fatality.</span></p>
+        </div>
+      </div>
+
+      <!-- Fire 5 -->
+      <div class="fire-card fade-up bg-card rounded-lg p-5 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-flame flex items-center justify-center font-heading font-black text-white text-lg">5</div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-smoke text-xs tracking-widest uppercase font-heading">Fire #5</span>
+            <span class="text-ember text-xs font-semibold">Jan 31, 2025</span>
+          </div>
+          <p class="font-heading font-bold text-lg leading-tight">126 Sheffield Avenue</p>
+          <p class="text-gray-400 text-sm mt-1">6 residents displaced.</p>
+        </div>
+      </div>
+
+      <!-- Fire 6 -->
+      <div class="fire-card fade-up bg-card rounded-lg p-5 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-flame flex items-center justify-center font-heading font-black text-white text-lg">6</div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-smoke text-xs tracking-widest uppercase font-heading">Fire #6</span>
+            <span class="text-ember text-xs font-semibold">Mar 2, 2025</span>
+          </div>
+          <p class="font-heading font-bold text-lg leading-tight">56–58 Avon Street</p>
+          <p class="text-gray-400 text-sm mt-1">17 tenants displaced.</p>
+        </div>
+      </div>
+
+      <!-- Fire 7 — full width -->
+      <div class="fire-card fade-up bg-card rounded-lg p-5 flex gap-4 items-start sm:col-span-2 border border-flame border-opacity-40">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-flame flex items-center justify-center font-heading font-black text-white text-lg">7</div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-smoke text-xs tracking-widest uppercase font-heading">Fire #7</span>
+            <span class="text-ember text-xs font-semibold">Mar 16, 2025</span>
+          </div>
+          <p class="font-heading font-bold text-lg leading-tight">56–58 Avon Street</p>
+          <p class="text-gray-400 text-sm mt-1">Second fire at the same address in two weeks. 
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="w-full h-px bg-divider"></div>
+  </div>
+
+  <!-- Message -->
+  <section class="max-w-2xl mx-auto px-6 py-12 text-center">
+    <h2 class="font-heading font-bold text-3xl uppercase mb-4">Residents deserve safe housing.</h2>
+    <p class="text-gray-300 text-base leading-relaxed">
+      Repeated fires at the same properties should trigger stronger inspections and enforcement.
+      The city has the tools to act — we are asking them to use them.
+    </p>
+  </section>
+
+  <!-- Call to action -->
+  <section class="max-w-4xl mx-auto px-6 pb-16">
+    <div class="bg-card rounded-xl p-8 text-center border border-divider">
+      <h2 class="font-heading font-black text-4xl uppercase text-ember mb-4">Take Action</h2>
+      <p class="text-gray-300 mb-6">Contact Mayor Elicker and your alder. Ask the city to:</p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8 text-left max-w-xl mx-auto">
+        <div class="flex-1 bg-black bg-opacity-40 rounded-lg p-4">
+          <span class="text-flame font-heading font-bold text-lg uppercase">Inspect</span>
+          <p class="text-gray-400 text-sm mt-1">All properties owned by this landlord.</p>
+        </div>
+        <div class="flex-1 bg-black bg-opacity-40 rounded-lg p-4">
+          <span class="text-flame font-heading font-bold text-lg uppercase">Enforce</span>
+          <p class="text-gray-400 text-sm mt-1">Rental licensing and safety requirements.</p>
+        </div>
+        <div class="flex-1 bg-black bg-opacity-40 rounded-lg p-4">
+          <span class="text-flame font-heading font-bold text-lg uppercase">Issue</span>
+          <p class="text-gray-400 text-sm mt-1">Meaningful penalties where violations are found.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="mailto:MayorElicker@newhavenct.gov" target="_blank"
+           class="inline-block bg-flame hover:bg-red-600 text-white font-heading font-bold text-lg uppercase tracking-wide px-8 py-3 rounded-lg transition-colors">
+          Email Mayor Elicker
+        </a>
+        <a href="https://experience.arcgis.com/experience/bdf1b76062a44280b7ef4c07d1e2b341" target="_blank"
+           class="inline-block border border-ember text-ember hover:bg-ember hover:text-black font-heading font-bold text-lg uppercase tracking-wide px-8 py-3 rounded-lg transition-colors">
+          Find Your Alder
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-divider py-6 text-center">
+    <p class="text-smoke text-xs tracking-wide">
+      Learn more &bull; Share with neighbors &bull; Ask the city to act
+    </p>
+  </footer>
+
+</body>
+</html>
